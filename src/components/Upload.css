@@ -1,0 +1,68 @@
+/* Upload.css */
+
+.upload-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.upload-card,
+.preview-card,
+.done-card {
+  min-width: 320px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.done-card {
+  width: 100%;
+  max-width: 900px;
+}
+
+.qr-section {
+  min-width: 220px;
+  padding-left: 1.5rem;
+  border-left: 1px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .qr-section {
+    border-left: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    border-top: 1px solid #dee2e6;
+    padding-top: 1rem;
+  }
+}
+
+/* Custom button colors */
+.btn-upload {
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+}
+.btn-upload:hover, .btn-upload:focus {
+  background-color: #732d91;
+  color: #fff;
+}
+
+.btn-download {
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+}
+.btn-download:hover, .btn-download:focus {
+  background-color: #117864;
+  color: #fff;
+}
