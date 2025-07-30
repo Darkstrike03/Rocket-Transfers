@@ -64,7 +64,7 @@ class Header extends React.Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/Ghostlink" to="/Ghostlink">
                   GHOSTLINK
                 </a>
               </li>
