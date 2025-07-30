@@ -1,0 +1,32 @@
+/* DarkMode.css */
+body.dark-mode, .dark-mode {
+  background-color: #18191a !important;
+  color: #f1f1f1 !important;
+}
+
+.dark-mode .card,
+.dark-mode .navbar,
+.dark-mode .form-control,
+.dark-mode .dropdown-menu,
+.dark-mode .list-group-item {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border-color: #333 !important;
+}
+
+.dark-mode .btn {
+  background-color: #333 !important;
+  color: #f1f1f1 !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .btn:hover, .dark-mode .btn:focus {
+  background-color: #444 !important;
+  color: #fff !important;
+}
+
+.dark-mode .form-control {
+  background-color: #23272b !important;
+  color: #f1f1f1 !important;
+  border-color: #333 !important;
+}
