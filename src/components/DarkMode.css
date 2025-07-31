@@ -27,6 +27,32 @@ body.dark-mode, .dark-mode {
 
 .dark-mode .form-control {
   background-color: #23272b !important;
-  color: #f1f1f1 !important;
+  color: #f1f1f1 !important; /* Keep the input text color light */
   border-color: #333 !important;
+}
+
+/* New rules for placeholder color */
+.dark-mode .form-control::placeholder { /* Standard */
+  color: #cccccc !important; /* Light grey */
+  opacity: 1 !important; /* Ensure it's not faded by default browser styles */
+}
+
+.dark-mode .form-control::-webkit-input-placeholder { /* Webkit browsers (Chrome, Safari) */
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+.dark-mode .form-control::-moz-placeholder { /* Mozilla Firefox */
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+.dark-mode .form-control:-ms-input-placeholder { /* Internet Explorer */
+  color: #cccccc !important;
+  opacity: 1 !important;
+}
+
+.dark-mode .form-control::-ms-input-placeholder { /* Microsoft Edge (newer versions use webkit) */
+  color: #cccccc !important;
+  opacity: 1 !important;
 }
