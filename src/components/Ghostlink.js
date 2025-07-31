@@ -60,7 +60,10 @@ class Ghostlink extends React.Component {
   // Admin: Create room in Supabase and open Room
   handleStartRoom = async () => {
     const { username, timeLimit } = this.state;
-    if (!username) return;
+    if (!username) {
+        this.setState({ error: "Username is required." });
+        return;
+    }
 
     // Generate unique code
     const code = Math.random().toString(36).substr(2, 8).toUpperCase();
@@ -91,7 +94,14 @@ class Ghostlink extends React.Component {
   // Attendee: Check code, show modal, then open Room
   handleJoinRoom = async () => {
     const { username, code } = this.state;
-    if (!username || !code) return;
+    if (!username) {
+        this.setState({ error: "Username is required." });
+        return;
+    }
+    if (!code) {
+        this.setState({ error: "Room code is required." });
+        return;
+    }
 
     // Fetch room info from Supabase
     const { data, error } = await supabase
@@ -135,7 +145,7 @@ class Ghostlink extends React.Component {
           <div className="card-body">
             <h2 className="mb-3">👻 Ghostlink</h2>
             <p>
-              Ghostlink lets you create a one-time, self-destructing chat room.{" "}
+              Ghostlink lets you create a one-time, self-destructing chat room.
               <br />
               Share a code, chat securely, and vanish without a trace!
             </p>
@@ -171,11 +181,12 @@ class Ghostlink extends React.Component {
             <input
               type="text"
               className="form-control mb-3"
-              placeholder="Your username"
+              placeholder="Your username here..." /* Added placeholder */
               name="username"
               value={username}
               onChange={this.handleChange}
               autoFocus
+              required /* Added required */
               data-testid="username-input"
             />
             <select
@@ -223,20 +234,22 @@ class Ghostlink extends React.Component {
             <input
               type="text"
               className="form-control mb-3"
-              placeholder="Your username"
+              placeholder="Your username here..." /* Added placeholder */
               name="username"
               value={username}
               onChange={this.handleChange}
               autoFocus
+              required /* Added required */
               data-testid="username-input-enter"
             />
             <input
               type="text"
               className="form-control mb-3"
-              placeholder="Enter code"
+              placeholder="Enter room code here..." /* Added placeholder */
               name="code"
               value={code}
               onChange={this.handleChange}
+              required /* Added required */
               data-testid="code-input"
             />
             <button
