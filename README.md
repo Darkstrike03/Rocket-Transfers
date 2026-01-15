@@ -8,7 +8,7 @@
 
 | Home Screen | Uploading File | Code Generation |
 | :--- | :--- | :--- |
-| ![Home Page](./screenshots/Screenshot (2101).png) | ![Upload Page](./screenshots/Screenshot (2102).png) | ![Code Page](./screenshots/Screenshot (2103).png) |
+| ![Home Page](./screenshots/Screenshot(2101).png) | ![Upload Page](./screenshots/Screenshot(2102).png) | ![Code Page](./screenshots/Screenshot(2103).png) |
 
 ---
 
