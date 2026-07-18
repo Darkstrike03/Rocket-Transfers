@@ -15,10 +15,10 @@ export default function App() {
         <main className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Upload" element={<Upload />} />
-            <Route path="/Download" element={<Download />} />
-            <Route path="/Ghostlink" element={<Ghostlink />} />
-            <Route path="/Room" element={<Room />} />
+            <Route path="/upload" element={<Upload />} />
+            <Route path="/download" element={<Download />} />
+            <Route path="/ghostlink" element={<Ghostlink />} />
+            <Route path="/room" element={<Room />} />
           </Routes>
         </main>
         <Footer />

@@ -25,7 +25,7 @@ export default function Home() {
   }, [])
 
   const handleGetStarted = useCallback(() => {
-    window.location.href = '/Upload'
+    window.location.href = '/upload'
   }, [])
 
   return (
@@ -65,7 +65,7 @@ export default function Home() {
           <button onClick={handleGetStarted} className="btn-primary w-full sm:w-auto text-sm sm:text-lg px-6 sm:px-8 py-2.5 sm:py-3">
             Get Started
           </button>
-          <Link to="/Ghostlink" className="btn-secondary w-full sm:w-auto text-sm sm:text-lg px-6 sm:px-8 py-2.5 sm:py-3 text-center">
+          <Link to="/ghostlink" className="btn-secondary w-full sm:w-auto text-sm sm:text-lg px-6 sm:px-8 py-2.5 sm:py-3 text-center">
             Ghostlink Rooms
           </Link>
         </div>

@@ -6,9 +6,9 @@ import rocketAnimation from './assets/Rocket in Space (Transparent Background).j
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
-  { to: '/Upload', label: 'Upload' },
-  { to: '/Download', label: 'Download' },
-  { to: '/Ghostlink', label: 'Ghostlink' },
+  { to: '/upload', label: 'Upload' },
+  { to: '/download', label: 'Download' },
+  { to: '/ghostlink', label: 'Ghostlink' },
 ]
 
 export default function Header() {
